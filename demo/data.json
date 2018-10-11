@@ -1,0 +1,289 @@
+[ {
+	"id" : "home",
+	"value" : "home",
+	"name" : "系统首页",
+	"isLeaf" : true,
+	"icon" : "fa fa-home",
+	"iconColor" : "blue",
+	"path" : "javascript:alert('home')"
+}, {
+	"id" : "MtoolsGroup",
+	"value" : "MtoolsGroup",
+	"name" : "系统管理",
+	"isLeaf" : false,
+	"icon" : "fa fa-gear",
+	"iconColor" : "yellow",
+	"path" : "javascript:;",
+	"child" : [ {
+		"id" : "M002",
+		"value" : "M002",
+		"name" : "菜单管理",
+		"isLeaf" : true,
+		"icon" : "fa fa-cubes",
+		"iconColor" : "black",
+		"path" : "javascript:;"
+	}, {
+		"id" : "M001",
+		"value" : "M001",
+		"name" : "字典管理",
+		"isLeaf" : true,
+		"icon" : "fa fa-gears",
+		"iconColor" : "black",
+		"path" : "javascript:;"
+	}, {
+		"id" : "M_Area",
+		"value" : "M_Area",
+		"name" : "行政区划",
+		"isLeaf" : true,
+		"icon" : "fa fa-bank",
+		"iconColor" : "black",
+		"path" : "javascript:;"
+	} ]
+}, {
+	"id" : "Code_Man",
+	"value" : "Code_Man",
+	"name" : "程序示例",
+	"isLeaf" : false,
+	"icon" : "fa fa-database",
+	"iconColor" : "olive",
+	"path" : "",
+	"child" : [ {
+		"id" : "Report_Field_01",
+		"value" : "Report_Field_01",
+		"name" : "报表指标库",
+		"isLeaf" : true,
+		"icon" : "",
+		"iconColor" : "black",
+		"path" : "javascript:;"
+	}, {
+		"id" : "Report_Field_02",
+		"value" : "Report_Field_02",
+		"name" : "报表01",
+		"isLeaf" : true,
+		"icon" : "",
+		"iconColor" : "black",
+		"path" : "javascript:;"
+	}, {
+		"id" : "m_newstype",
+		"value" : "m_newstype",
+		"name" : "新闻分类",
+		"isLeaf" : true,
+		"icon" : "icon_layer",
+		"iconColor" : "black",
+		"path" : "javascript:;"
+	}, {
+		"id" : "m_student",
+		"value" : "m_student",
+		"name" : "学生管理",
+		"isLeaf" : true,
+		"icon" : "icon_layer",
+		"iconColor" : "black",
+		"path" : "javascript:;"
+	} ]
+}, {
+	"id" : "MAttach",
+	"value" : "MAttach",
+	"name" : "上传管理",
+	"isLeaf" : false,
+	"icon" : "fa fa-paperclip",
+	"iconColor" : "maroon",
+	"path" : "",
+	"child" : [ {
+		"id" : "MAttachConfig",
+		"value" : "MAttachConfig",
+		"name" : "上传配置",
+		"isLeaf" : true,
+		"icon" : "icon_layer",
+		"iconColor" : "black",
+		"path" : "javascript:;"
+	}, {
+		"id" : "MAttachment",
+		"value" : "MAttachment",
+		"name" : "附件管理",
+		"isLeaf" : true,
+		"icon" : "icon_layer",
+		"iconColor" : "black",
+		"path" : "javascript:;"
+	}, {
+		"id" : "MAttachmentByTable",
+		"value" : "MAttachmentByTable",
+		"name" : "附件浏览",
+		"isLeaf" : true,
+		"icon" : "icon_layer",
+		"iconColor" : "black",
+		"path" : "javascript:;"
+	} ]
+}, {
+	"id" : "M_portal",
+	"value" : "M_portal",
+	"name" : "门户管理",
+	"isLeaf" : false,
+	"icon" : "fa fa-desktop",
+	"iconColor" : "purple",
+	"path" : "",
+	"child" : [ {
+		"id" : "M_portal2",
+		"value" : "M_portal2",
+		"name" : "门户管理",
+		"isLeaf" : true,
+		"icon" : "icon_layer",
+		"iconColor" : "black",
+		"path" : "javascript:;"
+	}, {
+		"id" : "M_portal_1",
+		"value" : "M_portal_1",
+		"name" : "组件管理",
+		"isLeaf" : true,
+		"icon" : "icon_layer",
+		"iconColor" : "black",
+		"path" : "javascript:;"
+	}, {
+		"id" : "M007",
+		"value" : "M007",
+		"name" : "部门论坛",
+		"isLeaf" : false,
+		"icon" : "fa fa-comments-o",
+		"iconColor" : "yellow",
+		"path" : "",
+		"child" : [ {
+			"id" : "M003",
+			"value" : "M003",
+			"name" : "交流论坛",
+			"isLeaf" : true,
+			"icon" : "icon_layer",
+			"iconColor" : "black",
+			"path" : "javascript:;"
+		}, {
+			"id" : "M005",
+			"value" : "M005",
+			"name" : "论坛分类",
+			"isLeaf" : true,
+			"icon" : "icon_layer",
+			"iconColor" : "black",
+			"path" : "javascript:;"
+		}, {
+			"id" : "M005-3",
+			"value" : "M005-3",
+			"name" : "分类管理",
+			"isLeaf" : true,
+			"icon" : "icon_layer",
+			"iconColor" : "black",
+			"path" : "javascript:;"
+		}, {
+			"id" : "M005-2",
+			"value" : "M005-2",
+			"name" : "分类加载",
+			"isLeaf" : true,
+			"icon" : "icon_layer",
+			"iconColor" : "black",
+			"path" : "javascript:;"
+		} ]
+	}, {
+		"id" : "m006",
+		"value" : "m006",
+		"name" : "个人网盘",
+		"isLeaf" : false,
+		"icon" : "fa fa-file-o",
+		"iconColor" : "blue",
+		"path" : "",
+		"child" : [ {
+			"id" : "m006-1",
+			"value" : "m006-1",
+			"name" : "分类浏览",
+			"isLeaf" : true,
+			"icon" : "icon_layer",
+			"iconColor" : "black",
+			"path" : "javascript:;"
+		}, {
+			"id" : "m006-2",
+			"value" : "m006-2",
+			"name" : "目录浏览",
+			"isLeaf" : true,
+			"icon" : "icon_layer",
+			"iconColor" : "black",
+			"path" : "javascript:;"
+		} ]
+	} ]
+}, {
+	"id" : "SYS_MAN",
+	"value" : "SYS_MAN",
+	"name" : "动态代码",
+	"isLeaf" : false,
+	"icon" : "fa fa-cube",
+	"iconColor" : "green",
+	"path" : "",
+	"child" : [ {
+		"id" : "SYS_MAN_TABLE",
+		"value" : "SYS_MAN_TABLE",
+		"name" : "业务表管理",
+		"isLeaf" : true,
+		"icon" : "fa fa-table",
+		"iconColor" : "black",
+		"path" : "javascript:;"
+	}, {
+		"id" : "SYS_MAN_RELATION",
+		"value" : "SYS_MAN_RELATION",
+		"name" : "关系表管理",
+		"isLeaf" : true,
+		"icon" : "fa  fa-chain",
+		"iconColor" : "black",
+		"path" : "javascript:;"
+	}, {
+		"id" : "Code_Temp",
+		"value" : "Code_Temp",
+		"name" : "模板管理",
+		"isLeaf" : true,
+		"icon" : "fa fa-file-o",
+		"iconColor" : "black",
+		"path" : "javascript:;"
+	}, {
+		"id" : "Code_Suit",
+		"value" : "Code_Suit",
+		"name" : "模板套件",
+		"isLeaf" : true,
+		"icon" : "fa fa-files-o",
+		"iconColor" : "black",
+		"path" : "javascript:;"
+	}, {
+		"id" : "Report_Main",
+		"value" : "Report_Main",
+		"name" : "填报设计",
+		"isLeaf" : true,
+		"icon" : "fa fa-file-text-o",
+		"iconColor" : "black",
+		"path" : "javascript:;"
+	} ]
+}, {
+	"id" : "DemoDemoTree",
+	"value" : "DemoDemoTree",
+	"name" : "常用示例",
+	"isLeaf" : true,
+	"icon" : "fa fa-book",
+	"iconColor" : "maroon",
+	"path" : "javascript:;"
+}, {
+	"id" : "DemoMulti",
+	"value" : "DemoMulti",
+	"name" : "布局示例",
+	"isLeaf" : false,
+	"icon" : "fa fa-tasks",
+	"iconColor" : "fuchsia",
+	"path" : "",
+	"child" : [ {
+		"id" : "DemoMulti_0",
+		"value" : "DemoMulti_0",
+		"name" : "横-单行双列",
+		"isLeaf" : true,
+		"icon" : "icon_layer",
+		"iconColor" : "black",
+		"path" : "javascript:;"
+	}, {
+		"id" : "DemoMulti_1",
+		"value" : "DemoMulti_1",
+		"name" : "横-单行多列",
+		"isLeaf" : true,
+		"icon" : "icon_layer",
+		"iconColor" : "black",
+		"path" : "javascript:;"
+	} ]
+} ]

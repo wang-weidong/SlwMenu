@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>SlwMenu demo</title>
+<script type="text/javascript" src="jquery-1.7.min.js"></script>
+<script type="text/javascript" src="../slw.js"></script>
+<script type="text/javascript" src="../slw.menu.js"></script>
+<link rel="stylesheet" href="../style/font-awesome.min.css" />
+<link rel="stylesheet" href="../style/menu.css" type="text/css" />
+</head>
+
+<body>
+	<h1>SlwMenu Demo</h1>
+	<div id="slwMenuId">
+		<ul class="slwMenu-ul">
+			<li><a href="javascript:alert('home')"><i class="fa fa-home colortext text-blue"></i>系统首页</a></li>
+			<li><a href="javascript:alert('system')"><i class="fa fa-gear colortext text-yellow"></i>系统管理</a>
+				<ul class="slwMenu-sub-ul">
+					<li><a href="http://www.baicu.com"><i class="fa fa-cubes"></i>菜单管理</a></li>
+					<li><a href="dirDictMain.action"><i class="fa fa-gears"></i>字典管理</a></li>
+					<li><a href="dirSAreaMain.action"><i class="fa fa-bank"></i>行政区划</a></li>
+				</ul></li>
+			<li><a href="javascript:;"><i class="fa fa-database colortext text-olive"></i>Demo</a>
+				<ul class="slwMenu-sub-ul">
+					<li><a href="javascript:;"><i class="icon_layer"></i>报表指标库</a></li>
+					<li><a href="javascript:;"><i class="icon_layer"></i>报表01</a></li>
+					<li><a href="javascript:;"><i class="icon_layer"></i>新闻分类</a></li>
+					<li><a href="javascript:;"><i class="icon_layer"></i>学生管理</a></li>
+				</ul></li>
+			<li><a href="javascript:;"><i class="fa fa-paperclip colortext text-maroon"></i>上传管理</a>
+				<ul class="slwMenu-sub-ul">
+					<li><a href="javascript:;"><i class="icon_layer"></i>上传配置</a></li>
+					<li><a href="javascript:;"><i class="icon_layer"></i>附件管理</a></li>
+					<li><a href="javascript:;"><i class="icon_layer"></i>附件浏览</a></li>
+				</ul></li>
+			<li><a href="javascript:;"><i class="fa fa-desktop colortext text-purple"></i>门户管理</a>
+				<ul class="slwMenu-sub-ul">
+					<li><a href="javascript:;"><i class="icon_layer"></i>门户管理</a></li>
+					<li><a href="javascript:;"><i class="icon_layer"></i>组件管理</a></li>
+					<li><a href="javascript:;"><i class="fa fa-comments-o"></i>部门论坛</a>
+						<ul class="slwMenu-sub-ul">
+							<li><a href="javascript:;"><i class="icon_layer"></i>交流论坛</a></li>
+							<li><a href="javascript:;"><i class="icon_layer"></i>论坛分类</a></li>
+						</ul></li>
+					<li><a href="javascript:;"><i class="fa fa-file-o"></i>个人网盘</a>
+						<ul class="slwMenu-sub-ul">
+							<li><a href="javascript:;"><i class="icon_layer"></i>分类浏览</a></li>
+							<li><a href="javascript:;"><i class="icon_layer"></i>目录浏览</a></li>
+						</ul></li>
+				</ul></li>
+			<li><a href="javascript:;"><i class="fa fa-cube colortext text-green"></i>动态代码</a>
+				<ul class="slwMenu-sub-ul">
+					<li><a href="javascript:;"><i class="fa fa-table"></i>业务表管理</a></li>
+					<li><a href="javascript:;"><i class="fa  fa-chain"></i>关系表管理</a></li>
+				</ul></li>
+			<li><a href="javascript:;"><i class="fa fa-book colortext text-maroon"></i>常用示例</a></li>
+			<li><a href="javascript:;"><i class="fa fa-tasks colortext text-fuchsia"></i>布局示例</a>
+				<ul class="slwMenu-sub-ul">
+					<li><a href="javascript:;"><i class="icon_layer"></i>横-单行双列</a></li>
+					<li><a href="javascript:;"><i class="icon_layer"></i>横-单行多列</a></li>
+				</ul></li>
+		</ul>
+	</div>
+	
+	<div style="margin: 20px">
+		<table class="table table-bordered editTable form-group-sm">
+			<tr>
+				<td style="vertical-align: top" width="70px">
+					<div id="slwMenuNotInline"></div>
+				</td>
+				<td style="vertical-align: top" width="200px">
+					<div id="slwMenuInline"></div>
+				</td>
+				<td style="vertical-align: top" width="200px">
+					<div id="slwMenuSimple1"></div>
+				</td>
+				<td width="0px">
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<script>
+		$(function() {
+			
+			$('#slwMenuId').slwMenu({
+				borderWidth : '1px 0px 1px 0px'
+			});
+			
+			var options = {
+				className : [ 'sidebar', 'sidebar-menu', 'treeview-menu' ],
+				direction : 'vertical',
+				url : "data.json",
+				target : 'cssTab',
+				overflow : 'visible',
+				noTopBorder : false,
+				separator : 'none',
+				width : 220,
+				activeOpen : true,
+				activeItem : 'home'
+			}
+			$('#slwMenuInline').slwMenu(options);
+			
+			$('#slwMenuNotInline').slwMenu($.extend({}, options, {
+				className : [ 'sidebar', 'sidebar-menu', 'treeview-menu' ],
+				labelInline : false,
+				iconColor : 'bg',
+				moreThanOne : true
+			}));
+			
+			$('#slwMenuSimple1').slwMenu($.extend({}, options, {
+				className : [ 'slwSimple', 'slwSimple-ul', 'slwSimple-sub-ul' ],
+				moreThanOne : true
+			}));
+			
+		});
+	</script>
+</body>
+</html>
