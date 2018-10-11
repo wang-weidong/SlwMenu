@@ -12,7 +12,7 @@
 		this.defaults = {
 			direction : 'horizontal', // vertical, horizontal
 			url : null, // url非空则请求此url，返回上述json格式，如果为空则处理html代码片断
-			methodType : 'POST', // url请求方式
+			methodType : 'GET', // url请求方式
 			params : {}, // url请求额外参数
 			className : [ 'slwMenu', 'slwMenu-ul', 'slwMenu-sub-ul' ], // div、菜单父级ul、子级ul样式，非默认值需用户自定义样式
 			target : 'cssTab', // 超链接target
