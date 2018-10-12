@@ -1,8 +1,8 @@
 /**
- *	https://github.com/wang-weidong/SlwMenu
- *	
- *  SlwPlugins.SlwMenu v1.0 2018.7 by CSS WangWeidong
- *  Released under the MIT license
+ * https://github.com/wang-weidong/SlwMenu
+ * 
+ * SlwPlugins.SlwMenu v1.0 2018.7 by CSS WangWeidong 
+ * Released under the MIT license
  */
 ;
 (function() {
